@@ -1,0 +1,76 @@
+@media only screen and (max-width: 576px) {
+  /*ẩn phần tên ở giữa*/
+  .icon--info {
+    display: none;
+  }
+  /* chỉnh thanh nav-bar nằm dọc và điều chỉnh cỡ chữ */
+  #nav-bar .container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  #nav-bar a:link,
+  :visited {
+    font-size: 14px;
+  }
+  #nav-bar a:hover {
+    font-size: 16px;
+  }
+  /* căn chỉnh lại chữ ở giữa banner */
+  .banner h1 {
+    display: inline-block;
+    width: 50vw;
+    text-align: center;
+    font-size: 20px;
+  }
+  /* căn chỉnh phần chứng chỉ -giải thưởng cho mobile */
+  #certificate article {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    row-gap: 20px;
+  }
+  #certificate {
+    padding: 0px 10px;
+  }
+  .degree-1 {
+    border-bottom: 1px solid #d6c08d;
+  }
+  .degree-2 {
+    border-left: none;
+    padding-left: 0px;
+  }
+  .degree {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  #certificate img {
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 80vw;
+  }
+  #certificate p,
+  #certificate h3 {
+    font-size: 16px;
+  }
+  .item--3 {
+    grid-column: 2/3;
+  }
+  /* Phần dự án cho mobile-giao diện */
+  .project {
+    grid-template-columns: 1fr;
+  }
+  .content--2 {
+    display: block;
+    padding-top: 10px;
+  }
+  .d-flex {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: blue;
+  font-family: sans-serif;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+@media screen and (min-width: 992px) {
+  body {
+    display: grid;
+    grid-template-columns: 6fr 3fr 3fr;
+    grid-template-rows: 55vh 40vh;
+    gap: 10px;
+    font-size: 12px;
+  }
+  .teams {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    height: 100%;
+  }
+  .timelines {
+    grid-area: 1/3/3/4;
+  }
+}
+.container-fluid {
+  padding: 10px;
+  background-color: aliceblue;
+  height: 100%;
+}
+/* PHần Scopes  */
+.scopes span {
+  font-size: 22px;
+  font-weight: bold;
+}
+.scopes p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.scope {
+  width: 95%;
+  margin: 10px auto 5px auto;
+}
+/* phần goal và team */
+i {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+h2 {
+  color: blue;
+  font-weight: bold;
+  border-bottom: 1px solid rgb(168, 164, 164);
+  margin-left: 10px;
+}
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.goal,
+.team,
+.timeline {
+  border-bottom: 1px solid rgb(219, 216, 216);
+  width: 90%;
+  margin: 10px auto 5px auto;
+}
+.icon-goal,
+.icon-team,
+.icon-primary {
+  justify-content: center;
+}

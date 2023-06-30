@@ -1,0 +1,46 @@
+@media only screen and (max-width: 992px) {
+  /*ẩn phần tên ở giữa nav-bar*/
+  .icon--info h3,
+  .icon--info p {
+    display: none;
+  }
+  /* xây dựng lại khoảng cách nav-bar */
+  #nav-bar .container {
+    grid-template-columns: 1fr 1fr 50px 1fr 1fr;
+    padding: 0px 50px;
+  }
+  .banner h1 {
+    display: inline-block;
+    width: 50vw;
+    text-align: center;
+  }
+  /* Phần chứng chỉ-giải thưởng cho tablet  */
+  .degree {
+    display: grid;
+  }
+  #certificate img {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  /* căn chỉnh phần dự án cho tablet  */
+  .content--2 {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    gap: 0;
+    justify-content: center;
+  }
+  .content--2 span {
+    margin-right: 5px;
+  }
+  .item--3 {
+    grid-column: 2/3;
+  }
+  /* footer  */
+  .icon-footer {
+    font-size: 16px;
+  }
+  .i--con {
+    font-size: 12px;
+  }
+}
